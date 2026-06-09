@@ -1,0 +1,128 @@
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação PHP Experience - DIO</title>
+</head>
+
+<style>
+    :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --hover: #334155;
+        --text: #f8fafc;
+        --accent: #38bdf8;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px 30px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        color: #94a3b8;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: var(--card);
+        border-radius: 20px;
+        padding: 30px;
+        transition: .3s;
+        border: 1px solid rgba(255, 255, 255, .05);
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        background: var(--hover);
+    }
+
+    .icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #cbd5e1;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: var(--accent);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        opacity: .9;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        color: #64748b;
+    }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Curso: <i>Formação PHP Experience - DIO</i></h1>
+    </header>
+
+    <section class="container">
+
+        <div class="card">
+            <!-- <div class="icon">🐘</div> -->
+            <h2>Aula 1: Introdução ao PHP</h2>
+            <a href="Aula1/exercicio1.php" class="btn">Entrar</a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 - Minha Plataforma de Estudos
+    </footer>
+
+</body>
+
+</html>
