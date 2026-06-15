@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Estudos</title>
+
+    <style>
+        :root {
+            --bg: #102d19;
+            --card: #18482b;
+            --hover: #246839;
+            --text: #ecf7ed;
+            --accent: #3f853f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(34, 86, 47, 0.95), rgba(21, 58, 31, 0.95));
+            border-radius: 24px;
+            padding: 32px;
+            transition: transform .2s ease, box-shadow .2s ease;
+            border: 1px solid rgba(78, 179, 78, 0.18);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 40px rgba(0, 0, 0, 0.22);
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #d8ead7;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent);
+            color: white;
+            padding: 11px 24px 14px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+            box-shadow: 0 0px 16px #4eb34e7c;
+        }
+
+        .btn:hover {
+            opacity: .95;
+            transform: translateY(-1px);
+            box-shadow: 0 0px 18px #4eb34eb7;
+        }
+
+        header p {
+            color: #b7d8b4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #9dbf9b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Central de Estudos</h1>
+        <p>Escolha um curso e continue seus estudos.</p>
+    </header>
+
+    <section class="container">
+
+        <div class="card">
+            <div class="icon">🐘</div>
+            <h2>PHP</h2>
+            <a href="PHP/index.php" class="btn">Entrar</a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 - Minha Plataforma de Estudos
+    </footer>
+
+</body>
+
+</html>
